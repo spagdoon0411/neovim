@@ -12,11 +12,11 @@ return {
 					null_ls.builtins.formatting.black,
 					null_ls.builtins.formatting.prettierd.with({
 						env = {
-							PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/nvim/lua/utils/.prettierrc.json"),
+							PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/nvim/lua/utils/prettierrc.json"),
 						},
 					}),
 				},
 			})
-		end
-	}
+		end,
+	},
 }
