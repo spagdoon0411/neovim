@@ -10,6 +10,7 @@ return {
 					null_ls.builtins.diagnostics.eslint,
 					null_ls.builtins.completion.spell,
 					null_ls.builtins.formatting.black,
+					null_ls.builtins.formatting.clang_format,
 					null_ls.builtins.formatting.prettierd.with({
 						env = {
 							PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/nvim/lua/utils/prettierrc.json"),
