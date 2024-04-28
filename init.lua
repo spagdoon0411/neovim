@@ -8,4 +8,3 @@ require("after.plugins.lsp_zero")
 require("after.plugins.gitsigns")
 require("after.plugins.harpoon")
 require("after.plugins.undotree")
-
