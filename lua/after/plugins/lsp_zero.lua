@@ -36,6 +36,12 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>gf", function()
 		vim.lsp.buf.format()
 	end, opts)
+	vim.keymap.set("n", "<leader>gD", function()
+		vim.lsp.buf.declaration()
+	end, opts)
+	vim.keymap.set("n", "<leader>fl", function()
+		vim.diagnostic.open_float()
+	end, opts)
 
 	-- Set up autoformatting
 	vim.api.nvim_create_autocmd("BufWritePre", {
